@@ -28,3 +28,34 @@
 // FizzBuzz
 // dan seterus nya sampai dengan 100
 
+function fizzBuzz() {
+    // Membuat array kosong untuk menyimpan hasil
+    const result = [];
+  
+    // Loop dari 1 hingga 100
+    for (let i = 1; i <= 100; i++) {
+      // Jika angka adalah kelipatan 3 dan 5, tambahkan "FizzBuzz" ke dalam array
+      if (i % 3 === 0 && i % 5 === 0) {
+        result.push("FizzBuzz");
+      }
+      // Jika angka adalah kelipatan 5, tambahkan "Buzz" ke dalam array
+      else if (i % 5 === 0) {
+        result.push("Buzz");
+      }
+      // Jika angka adalah kelipatan 3, tambahkan "Fizz" ke dalam array
+      else if (i % 3 === 0) {
+        result.push("Fizz");
+      }
+      // Jika tidak ada kondisi di atas yang terpenuhi, tambahkan angka itu sendiri ke dalam array
+      else {
+        result.push(i);
+      }
+    }
+  
+    // Mengembalikan hasil berupa array yang berisi Fizz, Buzz, FizzBuzz, atau angka
+    return result;
+  }
+  
+  // Memanggil fungsi fizzBuzz() dan mencetak hasilnya ke konsol
+  console.log(fizzBuzz());
+  
