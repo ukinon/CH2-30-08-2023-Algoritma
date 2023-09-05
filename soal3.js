@@ -1,6 +1,6 @@
 const users = require("./data.json");
 
-// 1) tentukan yang mempunyai buah favorit dia nya banana
+// 1) fungsi untuk cek register
 const checkRegistered = (data) => {
     // 1. membuat variable array kosong
     let result = [];

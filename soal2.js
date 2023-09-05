@@ -19,7 +19,9 @@ const checkFemaleGender = (data) => {
     };
 }
 
+//deklarasi variable untuk mengambil return value dari function di atas
 let data = checkFemaleGender(users).data;
 let totalData = checkFemaleGender(users).totalData;
 
+//memanggil fungsi
 console.log(data, "\n==============\n jumlah data: ", totalData);

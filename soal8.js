@@ -6,7 +6,7 @@ const checkCompanyFirstLetterL = (data) => {
     let result = [];
     // 2. looping untuk mengecheck satu satu data
     for (let i = 0; i < data.length; i++) {
-        // 3. kondisi jika index 0 array dari company = Z
+        // 3. kondisi jika index 0 array dari company = L
         if (Array.from(data[i].company)[0] === 'L') {
             // 4. masukkan data yang sesuai hasil check kondisi di atas
             result.push(data[i])

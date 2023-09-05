@@ -1,12 +1,12 @@
 const users = require("./data.json");
 
-// 1) tentukan yang memiliki company berhuruf depan L
+// 1) tentukan yang memiliki company berhuruf akhir E
 const checkCompanyLastLetterE = (data) => {
     // 1. membuat variable array kosong
     let result = [];
     // 2. looping untuk mengecheck satu satu data
     for (let i = 0; i < data.length; i++) {
-        // 3. kondisi jika index 0 array dari company = Z
+        // 3. kondisi jika index akhir dari company = E
         if (Array.from(data[i].company)[data[i].company.length - 1] === 'E') {
             // 4. masukkan data yang sesuai hasil check kondisi di atas
             result.push(data[i])

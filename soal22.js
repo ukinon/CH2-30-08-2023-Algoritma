@@ -1,16 +1,22 @@
 // Buat sebuah function yang bisa melakukan fungsi dari fibonacci number di dalam kode Javascript. 
 // Bisa diskusi dengan teman kelompokmu ya!
 
-function fibonacci(n) {
-    if (n <= 1) {
-        return n; // Basis: Fibonacci dari 0 adalah 0 dan dari 1 adalah 1
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2); // Rekursif: Fibonacci dari n adalah jumlah dari Fibonacci(n-1) dan Fibonacci(n-2)
-    }
-}
+// Fungsi untuk menampilkan urutan angka fibonacci
+function fibonacci(data) {
+    //deklarasi variable result dengan default value 0 dan 1 yaitu 2 angka awal dalam angka fibonacci
+    const result = [0, 1];
 
-// Contoh penggunaan:
-console.log(fibonacci(0)); // Output: 0
-console.log(fibonacci(1)); // Output: 1
-console.log(fibonacci(5)); // Output: 5
-console.log(fibonacci(10)); // Output: 55
+    // Menggunakan loop untuk menghitung dan menambahkan bilangan fibonacci ke dalam array.
+    for (let i = 2; i < data; i++) {
+        //deklarasi variable yang berisi rumus bilangan fibonacci
+      const nextNum = result[i - 1] + result[i - 2];
+      //memasukkan hasil hitungan ke dalam array
+      result.push(nextNum);
+    }
+  
+    return result;
+  }
+  
+  //memanggil fungsi
+  console.log(fibonacci(10));
+  

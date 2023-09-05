@@ -30,7 +30,7 @@ function solution(n) {
         result = "E"; // Jika n <= 60, hasilnya adalah "E"
     }
     
-    return result; // Mengembalikan hasil yang telah ditentukan
+    return result;
 }
 
 // Contoh penggunaan:

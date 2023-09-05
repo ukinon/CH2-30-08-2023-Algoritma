@@ -1,12 +1,12 @@
 const users = require("./data.json");
 
-// 1) tentukan yang memiliki company berhuruf depan L
+// 1) fungsi untuk cek umur dan registered
 const checkAgeAndRegistered = (data) => {
     // 1. membuat variable array kosong
     let result = [];
     // 2. looping untuk mengecheck satu satu data
     for (let i = 0; i < data.length; i++) {
-        // 3. kondisi jika index 0 array dari company = Z
+        // 3. kondisi jika umur kurang dari 30 dan registered lebih dari 2018
         if (data[i].age < 30 && data[i].registered > '2018') {
             // 4. masukkan data yang sesuai hasil check kondisi di atas
             result.push(data[i])

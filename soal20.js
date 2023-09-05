@@ -23,11 +23,10 @@ function solution(str) {
         }
     }
     
-    // Mengembalikan nilai 'result', yang mungkin berubah menjadi "YES" jika ditemukan pasangan 'ab' atau 'ba'
     return result;
 }
 
-// Contoh penggunaan:
+// memanggil fungsi
 console.log(solution("acdebae")) // expected output YES
 console.log(solution("cdaecba")) // expected output NO
 

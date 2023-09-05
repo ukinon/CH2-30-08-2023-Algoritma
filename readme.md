@@ -62,5 +62,5 @@ setiap tim presentasi hasil pengerjaannya dan nanti aku random tunjuk anggota ti
 ### soal nomer 16 - 24 dapat diliat dalam file nya
 #### Note : tim poin terbaik kerjasama, hasil pengerjaan dan saat presentasi nya akan mendapatkan reward dan tim dengan poin terkecil akan mendapatkan punishment hehe
 
-diagram flowchart kamu :
-![diagram](./contoh.png)  
+diagram flowchart nomor 17 :
+![diagram](./flowChartNumber17.png)  
