@@ -1,13 +1,13 @@
-const users = require("./data.json");
+const users = require("../json/data.json");
 
-// 1) fungsi untuk cek register
-const checkRegistered = (data) => {
+// 1) tentukan yang memiliki company berhuruf depan L
+const checkCompanyFirstLetterL = (data) => {
     // 1. membuat variable array kosong
     let result = [];
     // 2. looping untuk mengecheck satu satu data
     for (let i = 0; i < data.length; i++) {
-        // 3. check data yang register 2014 - 2018
-        if (data[i].registered >= '2014' && data[i].registered <= '2018') {
+        // 3. kondisi jika index 0 array dari company = L
+        if (Array.from(data[i].company)[0] === 'L') {
             // 4. masukkan data yang sesuai hasil check kondisi di atas
             result.push(data[i])
         }
@@ -20,8 +20,8 @@ const checkRegistered = (data) => {
 }
 
 //deklarasi variable untuk mengambil return value dari function di atas
-let data = checkRegistered(users).data;
-let totalData = checkRegistered(users).totalData;
+let data = checkCompanyFirstLetterL(users).data;
+let totalData = checkCompanyFirstLetterL(users).totalData;
 
 //memanggil function
 console.log(data, "\n==============\n jumlah data: ", totalData);

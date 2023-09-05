@@ -1,4 +1,4 @@
-const users = require("./data.json");
+const users = require("../json/data.json");
 
 //1. membuat fungsi untuk menukar nama depan dan belakang
 const swapFirstAndLastNames = (data) => {

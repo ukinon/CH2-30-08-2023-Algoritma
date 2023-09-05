@@ -1,4 +1,4 @@
-const users = require("./data.json");
+const users = require("../json/data.json");
 
 // 1) tentukan yang memiliki teman bernama imam
 const checkFriends = (data) => {

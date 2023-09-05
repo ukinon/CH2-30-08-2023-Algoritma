@@ -1,4 +1,4 @@
-const users = require("./data.json");
+const users = require("../json/data.json");
 
 
 //Fungsi untuk mengganti alamat berdasarkan gender

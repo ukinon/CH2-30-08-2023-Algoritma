@@ -1,4 +1,4 @@
-const users = require("./data.json");
+const users = require("../json/data.json");
 
 // 1) fungsi untuk memfilter user sesuai kebutuhan
 const userFilter = (data) => {

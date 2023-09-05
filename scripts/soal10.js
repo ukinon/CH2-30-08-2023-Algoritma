@@ -1,4 +1,4 @@
-const users = require("./data.json");
+const users = require("../json/data.json");
 
 // 1) fungsi untuk cek umur dan registered
 const checkAgeAndRegistered = (data) => {
